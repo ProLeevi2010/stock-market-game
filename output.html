@@ -1,0 +1,32 @@
+<div class="flex h-screen flex-col bg-background overflow-hidden">
+  <TopBar></TopBar>
+  <GameNav></GameNav>
+</div>
+
+<div class="flex flex-1 overflow-hidden">
+  <div class="w-80 flex-shrink-0 border-r border-border overflow-y-auto">
+    <StockList></StockList>
+  </div>
+  <div class="flex-1 flex flex-col overflow-hidden">
+    <div class="flex-1 overflow-y-auto p-4">
+    </div>
+    <div class="h-48 border-t border-border overflow-y-auto p-4">
+      <MarketEvents></MarketEvents>
+    </div>
+  </div>
+  <div class="w-80 flex-shrink-0 border-l border-border overflow-y-auto">
+    <TradingPanel></TradingPanel>
+  </div>
+</div>
+
+<ChartPanel></ChartPanel>
+
+<div class="flex h-full items-center justify-center text-muted-foreground">
+  <p>
+    Select a stock to view its chart
+  </p>
+</div>
+
+<div class="flex-1 overflow-hidden">
+  <BankPage></BankPage>
+</div>
